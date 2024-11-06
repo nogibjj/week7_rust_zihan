@@ -13,23 +13,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Rust
-      uses: actions/setup-rust@v1
-      with:
-        rust-version: stable
+      - name: Set up Rust
+        uses: actions/setup-rust@v2
+        with:
+          rust-version: stable
 
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y libssl-dev pkg-config
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libssl-dev pkg-config
 
-    - name: Run Makefile targets
-      run: |
-        make ci
+      - name: Run Makefile targets
+        run: |
+          make ci
 
-    - name: Build release version
-      run: |
-        make release
+      - name: Build release version
+        run: |
+          make release
