@@ -1,5 +1,4 @@
 # Makefile for Rust Project
-
 all: check build format lint test
 
 check:
@@ -20,5 +19,5 @@ test:
 release:
 	cargo build --release
 
-# Additional target for testing
-ci: check lint test
+#Debug mode: binary is found at target/debug/
+#release mode: binary is found at target/release. Uses full optimisations.
