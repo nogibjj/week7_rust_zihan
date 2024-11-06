@@ -1,6 +1,7 @@
 [package]
-name = "add"
+name = "week7_test_tool"
 version = "0.1.0"
+authors = ["Zihan Xiao <zx151@duke.edu>"]
 edition = "2021"
 
 [dependencies]
