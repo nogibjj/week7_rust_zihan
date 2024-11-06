@@ -1,4 +1,4 @@
-# week7_test_tool
+# Week7 Test Tool - Rust
 
 A simple Rust command-line tool that outputs a greeting message.
 
