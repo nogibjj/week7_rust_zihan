@@ -1,8 +1,9 @@
-use add::add;
+// src/main.rs
+
+use week7_test_tool::hello;
 
 fn main() {
-    let x = 1;
-    let y = 500;
-    let z = add(&x, &y);
-    println!("The addition of {} and {} is {}", x, y, z);
+    let name = "Zihan";
+    let message = hello(name);
+    println!("{}", message);
 }
