@@ -1,3 +1,5 @@
+[![CI/CD](https://github.com/nogibjj/week7_rust_zihan/actions/workflows/CI.yml/badge.svg)](https://github.com/nogibjj/week7_rust_zihan/actions/workflows/CI.yml)
+
 # Week7 Test Tool - Rust
 
 A simple Rust command-line tool that outputs a greeting message.
